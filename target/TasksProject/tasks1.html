@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="task.css">
+<head>
+ <meta charset="utf-8">
+ <title>Task list</title>
+ <link rel="stylesheet" type="text/css"
+       href="styles/tasks1.css" media="screen" />
+</head>
+<body>
+<header>
+ <img src="todolist.jpg" alt="to do list" id="leftimage"/><span>Task list</span>
+ <img src="todolist.jpg" alt="to do list" id="rightimage"/>
+</header>
+<fieldset>
+ <legend>New Task</legend>
+<main>
+ <div>
+  <form>
+   <p>
+    <label>New Task</label> <input type="text" required="required" name="task" class="large" placeholder="New Task Name" />
+   </p>
+   <p>
+    <label>Required by</label> <input type="date" required="required" name="requiredBy" />
+   </p>
+   <p>
+    <label>Category</label>
+      <select >
+           <option value="Class">Class</option>
+           <option value="Work">Work </option>
+           <option value="social">Social </option>
+   </select>
+   </p>
+   <nav>
+    <a href="#">Save task</a> <a
+           href="#">Clear task</a>
+   </nav>
+  </form>
+ </div>
+</main>
+ </fieldset>
+  <table id="tblTasks">
+   <caption id="title">To DO List</caption>
+   <colgroup>
+    <col width="50%">
+    <col width="25%">
+    <col width="25%">
+   </colgroup>
+   <thead>
+   <tr>
+    <th>Name</th>
+    <th>Due</th>
+    <th>Category</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+    <td>Working Assigment</td>
+    <td><time datetime="2017-11-02">2017-11-02</time></td>
+    <td>Calss</td>
+   </tr>
+   <tr  class="completed"><td>Call to My son</td>
+    <td><time datetime="2017-11-02">2017-11-02</time></td>
+    <td>Family</td>
+   </tr>
+   <tr>
+    <td>Meet friends for dinner</td><td><time datetime="2017-11-06">2017-11-06</time></td>
+    <td>Personal</td>
+   </tr>
+   </tbody>
+  </table>
+  <nav>
+   <a href="#">Add task</a>
+  </nav>
+ </div>
+</main>
+<footer>&copy;mtollosa  You have 1 complete Tasks and two open Task</footer>
+</body>
+</html>

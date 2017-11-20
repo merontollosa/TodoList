@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Task list</title>
+ <script type="text/javascript" src="validation.js"></script>
+ <link rel="stylesheet" type="text/css" href="../css/task.css">
+</head>
+<body>
+<header>
+ <img src="../static/todolist.jpg" alt="to do list" id="leftimage"/><span>Task list</span>
+ <img src="../static/todolist.jpg" alt="to do list" id="rightimage"/>
+</header>
+<fieldset>
+ <legend>New Task</legend>
+<main>
+ <div>
+  <form>
+   <p>
+    <label>New Task</label> <input type="text" required="required" id="task" class="large" placeholder="New Task Name" />
+   </p>
+   <p>
+    <label>Required by</label> <input type="date" required="required"  id="datereq" >
+   </p>
+   <p>
+    <label>Category</label>
+      <select id="category">
+           <option value="-1">Select Catagory</option>
+           <option value="Class">Class</option>
+           <option value="Work">Work </option>
+           <option value="social">Social </option>
+   </select>
+   </p>
+   <nav>
+    <input type="button" name="save" onclick="saveTask();" value="Save task">
+    <input type="button" name="clear" onclick="clearTask();" value="Clear task"/>
+   </nav>
+  </form>
+ </div>
+</main>
+ </fieldset>
+  <table id="tblTasks">
+   <colgroup>
+    <col>
+    <col>
+    <col>
+    <col>
+   </colgroup>
+   <thead>
+   <tr>
+    <th>Name</th>
+    <th>Due</th>
+    <th>Category</th>
+    <th>Status</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+    <td>Assigment</td>
+    <td><time datetime="2017-11-02">2017-11-02</time></td>
+    <td>Calss</td>
+    <td><label><input type="checkbox" name="completed">Completed </label></td>
+   </tr>
+   <tr  class="completedTask"><td>Call to My son</td>
+    <td><time datetime="2017-11-02">2017-11-02</time></td>
+    <td>Family</td>
+    <td><label><input type="checkbox" name="completed">Completed </label></td>
+   </tr>
+   <tr>
+    <td>Meet friends for dinner</td><td><time datetime="2017-11-06">2017-11-06</time></td>
+    <td>Personal</td>
+    <td><label><input type="checkbox" name="completed">Completed </label></td>
+   </tr>
+   </tbody>
+  </table>
+  <nav>
+   <a href="#">Add task</a>
+  </nav>
+<p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+ <img src=http://jigsaw.w3.org/css-validator/images/vcss
+      alt="Valid CSS!"/>
+</a>
+</p>
+<p><a href="http://validator.w3.org/check/referer">
+ <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+      alt="html validator"/>
+</a>
+</p>
+<footer>&copy;mtollosa  You have 1 complete Tasks and two open Task</footer>
+</body>
+</html>
